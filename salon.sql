@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.1)
--- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.1)
+-- Dumped from database version 12.17 (Ubuntu 12.17-1.pgdg22.04+1)
+-- Dumped by pg_dump version 12.17 (Ubuntu 12.17-1.pgdg22.04+1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -49,8 +49,8 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.appointments (
     appointment_id integer NOT NULL,
-    customer_id integer,
     service_id integer,
+    customer_id integer,
     "time" character varying
 );
 
@@ -263,4 +263,3 @@ ALTER TABLE ONLY public.appointments
 --
 -- PostgreSQL database dump complete
 --
-
